@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300CACB61F1BD74000AA637C /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 300CACB51F1BD74000AA637C /* GoogLeNetPlaces.mlmodel */; };
 		3031853D1F1A2B400023E1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031853C1F1A2B400023E1BB /* AppDelegate.swift */; };
 		3031853F1F1A2B400023E1BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031853E1F1A2B400023E1BB /* ViewController.swift */; };
-		303185421F1A2B400023E1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303185401F1A2B400023E1BB /* Main.storyboard */; };
 		303185441F1A2B400023E1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303185431F1A2B400023E1BB /* Assets.xcassets */; };
 		303185471F1A2B400023E1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303185451F1A2B400023E1BB /* LaunchScreen.storyboard */; };
+		30711DC91F1A38C200F9B1E3 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30711DC81F1A38C200F9B1E3 /* UIView+extension.swift */; };
+		30711DCF1F1A56B600F9B1E3 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30711DCE1F1A56B600F9B1E3 /* Resnet50.mlmodel */; };
+		307BEACB1F1B804900E87325 /* RealTime+RecognizeDominant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BEACA1F1B804900E87325 /* RealTime+RecognizeDominant.swift */; };
+		307BEAD01F1B822700E87325 /* RecognizeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BEACF1F1B822700E87325 /* RecognizeScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300CACB51F1BD74000AA637C /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = ../../../GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 		303185391F1A2B400023E1BB /* RealTimeObjectDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeObjectDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3031853C1F1A2B400023E1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3031853E1F1A2B400023E1BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		303185411F1A2B400023E1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		303185431F1A2B400023E1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303185461F1A2B400023E1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		303185481F1A2B400023E1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30711DC81F1A38C200F9B1E3 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		30711DCE1F1A56B600F9B1E3 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		307BEACA1F1B804900E87325 /* RealTime+RecognizeDominant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealTime+RecognizeDominant.swift"; sourceTree = "<group>"; };
+		307BEACF1F1B822700E87325 /* RecognizeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		3031853B1F1A2B400023E1BB /* RealTimeObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
+				30711DC81F1A38C200F9B1E3 /* UIView+extension.swift */,
 				3031853C1F1A2B400023E1BB /* AppDelegate.swift */,
 				3031853E1F1A2B400023E1BB /* ViewController.swift */,
-				303185401F1A2B400023E1BB /* Main.storyboard */,
+				307BEAC91F1B801700E87325 /* RealTimeRecognizeDominant */,
+				307BEACC1F1B811700E87325 /* RecognizeScene */,
 				303185431F1A2B400023E1BB /* Assets.xcassets */,
 				303185451F1A2B400023E1BB /* LaunchScreen.storyboard */,
 				303185481F1A2B400023E1BB /* Info.plist */,
 			);
 			path = RealTimeObjectDetection;
+			sourceTree = "<group>";
+		};
+		307BEAC91F1B801700E87325 /* RealTimeRecognizeDominant */ = {
+			isa = PBXGroup;
+			children = (
+				30711DCE1F1A56B600F9B1E3 /* Resnet50.mlmodel */,
+				307BEACA1F1B804900E87325 /* RealTime+RecognizeDominant.swift */,
+			);
+			path = RealTimeRecognizeDominant;
+			sourceTree = "<group>";
+		};
+		307BEACC1F1B811700E87325 /* RecognizeScene */ = {
+			isa = PBXGroup;
+			children = (
+				300CACB51F1BD74000AA637C /* GoogLeNetPlaces.mlmodel */,
+				307BEACF1F1B822700E87325 /* RecognizeScene.swift */,
+			);
+			path = RecognizeScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +152,6 @@
 			files = (
 				303185471F1A2B400023E1BB /* LaunchScreen.storyboard in Resources */,
 				303185441F1A2B400023E1BB /* Assets.xcassets in Resources */,
-				303185421F1A2B400023E1BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +162,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307BEACB1F1B804900E87325 /* RealTime+RecognizeDominant.swift in Sources */,
 				3031853F1F1A2B400023E1BB /* ViewController.swift in Sources */,
+				30711DC91F1A38C200F9B1E3 /* UIView+extension.swift in Sources */,
+				30711DCF1F1A56B600F9B1E3 /* Resnet50.mlmodel in Sources */,
 				3031853D1F1A2B400023E1BB /* AppDelegate.swift in Sources */,
+				307BEAD01F1B822700E87325 /* RecognizeScene.swift in Sources */,
+				300CACB61F1BD74000AA637C /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		303185401F1A2B400023E1BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				303185411F1A2B400023E1BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		303185451F1A2B400023E1BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -316,6 +340,7 @@
 				3031854D1F1A2B400023E1BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
