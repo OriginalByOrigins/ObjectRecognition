@@ -2,7 +2,7 @@
 
 ObjectRecognition use Apple’s iOS 11 CoreML framework to detect and recognise objects realtime as well as in a still image.<br />
 I used 2 models for different targets:
-* ![ResNet50](https://developer.apple.com/machine-learning/model-details/ResNet50.txt) - For Realtime Recognition
+* <a href="https://developer.apple.com/machine-learning/model-details/ResNet50.txt">ResNet50</a> - For Realtime Recognition
 * ![GoogleNet](https://developer.apple.com/machine-learning/model-details/Places205-GoogLeNet.txt) - For Image Scene Recognition
 
 ## Demo
